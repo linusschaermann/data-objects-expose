@@ -1,4 +1,4 @@
-Exposé for Bachelor Thesis - Data Objects
+# Exposé for Bachelor Thesis - Data Objects
 
 - Systematic Literature Review on Data Objects in a ML Context
 - Either focus on a technical aspect or a social aspect
