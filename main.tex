@@ -3,7 +3,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%   Zusaetzliche Pakete  %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage{enumerate}  
+% use enumitem (do NOT load the older 'enumerate' package together with enumitem)
 \usepackage{fancyhdr}
 \usepackage{a4wide}
 \usepackage{graphicx}
@@ -30,6 +30,10 @@
 \setlength{\parindent}{0em} 
 \setlist[itemize]{noitemsep, topsep=0pt}
 \setlist[enumerate]{noitemsep, topsep=0pt}
+% Use numeric labels for enumerate levels:
+\setlist[enumerate,1]{label=\arabic*.}
+\setlist[enumerate,2]{label=\arabic{enumi}.\arabic{enumii}.}
+\setlist[enumerate,3]{label=\arabic{enumi}.\arabic{enumii}.\arabic{enumiii}.}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -103,7 +107,7 @@
 \begin{document}
 
   \JMUTitle
-      {Data Objects in ML Contexts: A Systematic Literature Review in IS Research}        % Titel der Arbeit
+      {Data Objects as epistemic and managerial boundary objects – how organizations produce, interpret, and act upon data objects in machine learning contexts.}        % Titel der Arbeit
       {Linus Schärmann}                        % Vor- und Nachname des Autors
       {2910412}
       
@@ -170,20 +174,37 @@
 \section{Research Topic} \label{researchtopic}
 Short introduction, explanation of the topic and its relevance. 
 
-\section{Objectives and Research Interests} \label{objectives}
+\section{Motivation} \label{motivation}
 Explain what you want to find out by the end of your research project—and why!
 
-\section{State of Research and Theoretical Basis} \label{stateresearch}
-A brief (not too detailed) overview of the existing literature and — depending on the field of research — a theoretical basis for your research.
+\section{Methodology} \label{methodology}
 
-\section{Concept} \label{concept}
-The concept is the core of your exposé: Here you present your question, your hypothesis (assumed result), and, if applicable, your methodology.
+Systematic Literature Review according to \citet{RN2}.
 
 \section{Preliminary Outline}
-Even if your outline isn't quite ready yet, this is a good place to structure your initial ideas.
 
-\section{Personal Motivation or Preparatory Work} \label{motivation}
-Optional – If you have already worked on this topic or have specific motivations for your research, you can describe them here.
+The following structure should give an overview of the planned sections of the thesis. Changes may appear during the research process.
+
+\begin{enumerate}
+  \item Introduction
+  \item Theoretical Background
+  \begin{enumerate}
+    \item Boundary Objects
+    \item Data Objects as Epistemic Artifacts
+  \end{enumerate}
+  \item Methodology
+  \item Structured Literature Review Results
+  \begin{enumerate}
+    \item Overview of Identified Literature
+    \item Technical Origin of Data Objects in ML Contexts
+    \item Data Objects as Boundary Objects in Organizational Contexts
+    \item Visualization and Interface Design as Epistemic Factors
+  \end{enumerate}
+  \item Discussion
+  \item Future Research Directions
+  \item Conclusion
+\end{enumerate}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Literaturverzeichnis wird 
